@@ -2,7 +2,7 @@
 
 The purpose of this repo is to outline possible directory structures that would work for bundling application assets along top level route lines. As backend applications grow and you go through the process of breaking up the monolithic application, you tend to break up the application into smaller services along top level routes. This seems to be applicable in the case of Ember applications because of the URL centric nature of the framework.
 
-Where is possibly breaks down is the containerization of objects. If a developer needs an object dependency from outside of their route, this may be a smell or it may just mean that the object needs to be pulled into a common place in which all routes can gain access to it. This however is slightly counter intuitive because it means that the entire application will take a payload hit just so we can share code.  One solution to this is [pre-process mapping of object dependencies to file dependencies](https://github.com/chadhietala/ember-object-graph-resolver).
+Where it possibly breaks down is the containerization of objects. If a developer needs an object dependency from outside of their route, this may be a smell or it may just mean that the object needs to be pulled into a common place in which all routes can gain access to it. This however is slightly counter intuitive because it means that the entire application will take a payload hit just so we can share code.  One solution to this is [pre-process mapping of object dependencies to file dependencies](https://github.com/chadhietala/ember-object-graph-resolver).
 
 # Lazy Loading 3rd Party Scripts
 
