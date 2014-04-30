@@ -22,4 +22,4 @@ exports default Ember.View.extend({
 });
 ``` 
 
-I don't know if adding semantics to Ember is the best solution but rather have the file directory be source of truth of what is lazy and what is not lazy.
+I don't know if adding semantics to Ember is the best solution but rather have the file directory or annotations be the source of truth.
